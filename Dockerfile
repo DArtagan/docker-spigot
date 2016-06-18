@@ -24,6 +24,8 @@ RUN apk add --no-cache --virtual=build-dependencies \
 
 WORKDIR /minecraft/config
 
+VOLUME /minecraft/config
+
 EXPOSE 25565
 
 CMD java -jar /minecraft/spigot.jar
